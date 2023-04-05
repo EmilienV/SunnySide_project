@@ -1,0 +1,777 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+$height: 538px;
+$height_images: 312px;
+$width: 375px;
+$background-repeat: no-repeat;
+$background-position: center;
+$background-size: cover;
+$font-family_fraunces: 'Fraunces', serif;
+$font-family_barlow: 'Barlow' serif;
+
+$color_service_title: hsl(198, 62%, 26%);
+$font-size_service_title: 32px;
+$letter-spacing_service_title: -0.23px;
+$padding-bottom_service_title: 24px;
+$padding-top_service_title: 64px;
+
+$color_service_content: #808397;
+$letter-spacing_service_content: -0.13 px;
+$font-size_service_content: 18;
+$padding-bottom_service_content: 32px;
+
+$padding-bottom_categories_design_title: 27px;
+$font-size_categories_design_title: 28px;
+$font-weight_categories_design_title: 900;
+$letter-spacing_categories_design_title: -0.2px;
+$color_categories: #24554A;
+
+$padding_categories_design_content: 0 24px 59px 24px;
+$font-size_categories_design_content: 16px;
+
+$font-weight_categories_design_content: 600;
+$letter-spacing_categories_design_content: -0.11px;
+$line-height_categories_design_content: 27px;
+
+$border-radius_img: 50px;
+$display_img: block;
+$margin-left_img: auto;
+$margin-right_img: auto;
+$width_img: 50%px;
+$height_img: 72px;
+
+
+
+$padding_client_reviews: 32px 24px 0 24px;
+$text-align_client_reviews: center;
+$font-size_client_reviews: 18px;
+$font-family_client_reviews: $font-family_barlow;
+$font-weight_client_reviews: 600;
+$letter-spacing_client_reviews: 0.13px;
+$line-height_client_reviews: 32px;
+$color_client_reviews: #5B636D;
+
+$padding-top_client_reviews_name: 32px;
+$font-size_client_reviews_name: 18px;
+$font-weight_client_reviews_name: 900;
+$letter-spacing_client_reviews_name: -0.13px;
+
+$padding-top_client_reviews_job: 9px;
+$font-size_client_reviews_job: 14px;
+$font-weight_client_reviews_job: 600;
+$letter-spacing_client_reviews_job: 0.1px;
+$color_client_reviews_job: #A7AAAD;
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+header {
+    background-image: url(images/photos/image-header.jpg);
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+    height: $height;
+
+    .sunnyside_logo {
+        margin: 32px 0 0 24px;
+    }
+
+    .header_arrow_down {
+        display: flex;
+        justify-content: center;
+        transform: translateY(52px);
+    }
+
+    .header_informations {
+        display: none;
+    }
+
+    h1 {
+        font-family: $font-family_fraunces ;
+        color: white;
+        padding-top: 80px;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 6.25px;
+    }
+
+}
+
+.image_yellow_egg {
+    background-image: url(/05.Sunnyside/resources/images/photos/image-transform.jpg);
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    height: 312px;
+}
+
+.transform_block {
+    display: flex;
+    flex-direction: column;
+    height: 309px;
+    width: 327px;
+    padding: 64px 24px 64px 24px;
+
+    .transform_service_title {
+        font-family: $font-family_fraunces ;
+        color: $color_service_title ;
+        font-size: $font-size_service_title ;
+        letter-spacing: $letter-spacing_service_title ;
+        padding-top: $padding-top_service_title;
+        padding-bottom: $padding-bottom_service_title ;
+    }
+
+    .transform_service_content {
+        font-family: $font-family_fraunces;
+        color: $color_service_content;
+        letter-spacing: $letter-spacing_service_content;
+        font-size: $font-size_service_content;
+        padding-bottom: $padding-bottom_service_content;
+    }
+
+}
+
+.btn_learn {
+    align-self: center;
+    color: #24303E;
+    font-family: $font-family_fraunces;
+    font-size: 15px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #fe786625;
+}
+
+.image_pink_glass {
+    background-image: url(/05.Sunnyside/resources/images/photos/image-stand-out.jpg);
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+    height: $height_images;
+
+}
+
+.standout_block {
+    display: flex;
+    flex-direction: column;
+    height: 309px;
+    width: 327px;
+    padding: 64px 24px 64px 24px;
+
+    .standout_service_title {
+        font-family: $font-family_fraunces ;
+        color: $color_service_title ;
+        font-size: $font-size_service_title ;
+        letter-spacing: $letter-spacing_service_title ;
+        padding-top: $padding-top_service_title;
+        padding-bottom: $padding-bottom_service_title ;
+    }
+
+    .standout_service_content {
+        font-family: $font-family_fraunces;
+        color: $color_service_content;
+        letter-spacing: $letter-spacing_service_content;
+        font-size: $font-size_service_content;
+        padding-bottom: $padding-bottom_service_content;
+    }
+}
+
+.image_blue_cherry {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(/05.Sunnyside/resources/images/photos/image-graphic-design.jpg);
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+    height: 600px;
+
+    .categories_design_title {
+        padding-bottom: $padding-bottom_categories_design_title;
+        font-size: $font-size_categories_design_title;
+        font-family: $font-family_fraunces;
+        letter-spacing: $letter-spacing_categories_design_title;
+        color: $color_service_title;
+
+    }
+
+    .categories_design_content {
+        padding: $padding_categories_design_content ;
+        font-size: $font-size_categories_design_content;
+        font-family: $font-family_fraunces;
+        color: $color_service_title;
+        letter-spacing: $letter-spacing_categories_design_content;
+        line-height: $line-height_categories_design_content;
+    }
+}
+
+.image_blue_orange {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(/05.Sunnyside/resources/images/photos/image-photography.jpg);
+    background-repeat: $background-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+    height: 600px;
+
+    .categories_photo_title {
+        padding-bottom: $padding-bottom_categories_design_title;
+        font-size: $font-size_categories_design_title;
+        font-family: $font-family_fraunces;
+        font-weight: $font-weight_categories_design_title;
+        letter-spacing: $letter-spacing_categories_design_title;
+        color: $color_service_title;
+    }
+
+    .categories_photo_content {
+        padding: $padding_categories_design_content ;
+        font-size: $font-size_categories_design_content;
+        font-family: $font-family_fraunces;
+        font-weight: $font-weight_categories_design_content;
+        color: $color_service_title;
+        letter-spacing: $letter-spacing_categories_design_content;
+        line-height: $line-height_categories_design_content;
+    }
+}
+
+.client_area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 327px;
+    height: 1108px;
+
+    h4 {
+        font-family: $font-family_fraunces;
+        font-size: 16px;
+        font-weight: 900;
+        color: #A7AAAD;
+        letter-spacing: 4px;
+        padding-top: 64px;
+    }
+
+    .client_emily {
+        height: 288px;
+        padding-top: 64px;
+
+        img {
+            border-radius: $border-radius_img;
+            display: $display_img;
+            margin-left: $margin-left_img;
+            margin-right: $margin-right_img;
+            width: $width_img;
+            height: $height_img;
+        }
+
+        .client_reviews_emily {
+            padding: $padding_client_reviews ;
+            text-align: $text-align_client_reviews;
+            font-size: $font-size_client_reviews;
+            font-family: $font-family_barlow;
+            font-weight: $font-weight_client_reviews;
+            letter-spacing: $letter-spacing_client_reviews;
+            line-height: $line-height_client_reviews;
+            color: $color_client_reviews;
+
+        }
+
+        .client_reviews_name_emily {
+            padding-top: $padding-top_client_reviews_name;
+            font-size: $font-size_client_reviews_name;
+            font-family: $font-family_fraunces;
+            font-weight: $font-weight_client_reviews_name;
+            letter-spacing: $letter-spacing_client_reviews_name;
+        }
+
+        .client_reviews_job_emily {
+            padding-top: $padding-top_client_reviews_job;
+            font-family: $font-family_barlow;
+            font-size: $font-size_client_reviews_job;
+            font-weight: $font-weight_client_reviews_job;
+            letter-spacing: $letter-spacing_client_reviews_job;
+            color: $color_client_reviews_job;
+        }
+    }
+
+    .client_thomas {
+        height: 320px;
+        padding-top: 64px;
+
+        img {
+            border-radius: $border-radius_img;
+            display: $display_img;
+            margin-left: $margin-left_img;
+            margin-right: $margin-right_img;
+            width: $width_img;
+            height: $height_img;
+        }
+
+        .client_reviews_thomas {
+            padding: $padding_client_reviews ;
+            text-align: $text-align_client_reviews;
+            font-size: $font-size_client_reviews;
+            font-family: $font-family_barlow;
+            font-weight: $font-weight_client_reviews;
+            letter-spacing: $letter-spacing_client_reviews;
+            line-height: $line-height_client_reviews;
+            color: $color_client_reviews;
+        }
+
+        .client_reviews_name_thomas {
+            padding-top: $padding-top_client_reviews_name;
+            font-size: $font-size_client_reviews_name;
+            font-family: $font-family_fraunces;
+            font-weight: $font-weight_client_reviews_name;
+            letter-spacing: $letter-spacing_client_reviews_name;
+        }
+
+        .client_reviews_job_thomas {
+            padding-top: $padding-top_client_reviews_job;
+            font-family: $font-family_barlow;
+            font-size: $font-size_client_reviews_job;
+            font-weight: $font-weight_client_reviews_job;
+            letter-spacing: $letter-spacing_client_reviews_job;
+            color: $color_client_reviews_job;
+        }
+    }
+
+    .client_jennie {
+        height: 288px;
+        padding-top: 64px;
+
+        img {
+            border-radius: $border-radius_img;
+            display: $display_img;
+            margin-left: $margin-left_img;
+            margin-right: $margin-right_img;
+            width: $width_img;
+            height: $height_img;
+        }
+
+        .client_reviews_jennie {
+            padding: $padding_client_reviews ;
+            text-align: $text-align_client_reviews;
+            font-size: $font-size_client_reviews;
+            font-family: $font-family_barlow;
+            font-weight: $font-weight_client_reviews;
+            letter-spacing: $letter-spacing_client_reviews;
+            line-height: $line-height_client_reviews;
+            color: $color_client_reviews;
+        }
+
+        .client_reviews_name_jennie {
+            padding-top: $padding-top_client_reviews_name;
+            font-size: $font-size_client_reviews_name;
+            font-family: $font-family_fraunces;
+            font-weight: $font-weight_client_reviews_name;
+            letter-spacing: $letter-spacing_client_reviews_name;
+        }
+
+        .client_reviews_job_jennie {
+            padding-top: $padding-top_client_reviews_job;
+            font-family: $font-family_barlow;
+            font-size: $font-size_client_reviews_job;
+            font-weight: $font-weight_client_reviews_job;
+            letter-spacing: $letter-spacing_client_reviews_job;
+            color: $color_client_reviews_job;
+        }
+    }
+}
+
+footer {
+    .footer_images {
+        display: flex;
+        flex-wrap: wrap;
+        width: $width;
+        height: 375px;
+        padding-top: 86px;
+
+        .image_milk {
+            width: 50%;
+            height: 50%;
+            background: url(/05.Sunnyside/resources/images/photos/image-gallery-milkbottles.jpg) center/cover no-repeat;
+        }
+
+        .image_orange {
+            width: 50%;
+            height: 50%;
+            background: url(/05.Sunnyside/resources/images/photos/image-gallery-orange.jpg) center/cover no-repeat;
+        }
+
+        .image_cornet {
+            width: 50%;
+            height: 50%;
+            background: url(/05.Sunnyside/resources/images/photos/image-gallery-cone.jpg) center/cover no-repeat;
+        }
+
+        .image_sugar {
+            width: 50%;
+            height: 50%;
+            background: url(/05.Sunnyside/resources/images/photos/image-gallery-sugarcubes.jpg) center/cover no-repeat;
+        }
+    }
+
+    .footer_informations_text {
+        height: 350px;
+        width: $width;
+        background-color: #90D4C6;
+
+        .sunnyside_logo {
+            display: block;
+            margin: auto;
+            padding-top: 64px;
+        }
+
+        .informations_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            color: #458D7E;
+            padding-top: 40px;
+            font-family: $font-family_barlow;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .socials_logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 88px;
+
+            .socials_logo_facebook {
+                padding: 0 28px 0 28px;
+            }
+
+            .socials_logo_instagram {
+                padding: 0 28px 0 28px;
+            }
+
+            .social_logo_twitter {
+                padding: 0 28px 0 28px;
+            }
+        }
+    }
+}
+
+@media (min-width:376px) {
+
+    $height_service_block_desktop: 50%;
+    $display_service_block_desktop: flex;
+
+
+    $text-align_desktop: left;
+
+
+    $align-self_btn_desktop: flex-start;
+
+
+    $width_image_service_desktop: 50%;
+    $height_image_service_desktop: 100%;
+    $background-size_image_service_desktop: cover;
+    $background-position_image_service_desktop: center;
+
+    $width_service_text_block_desktop: 285px;
+    $height_service_text_block_desktop: 100%;
+    $align-items_service_text_block_desktop: center;
+    $margin_service_text_block_desktop: auto;
+
+    header {
+        .nav_header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .header_informations {
+                display: inline;
+                padding: 34px 48px 0 0 ;
+                word-spacing: 47px;
+                color: white;
+            }
+        }
+    }
+
+    .service_offers {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+
+        .service_block_1 {
+            height: $height_service_block_desktop;
+            display: $display_service_block_desktop;
+            flex-direction: row-reverse;
+
+            .image_yellow_egg {
+                width: $width_image_service_desktop;
+                height: $height_image_service_desktop;
+                background-size: $background-size_image_service_desktop;
+                background-position: $background-position_image_service_desktop;
+            }
+
+            .transform_block {
+                width: $width_service_text_block_desktop;
+                height: $height_service_text_block_desktop;
+                align-items: $align-items_service_text_block_desktop;
+                margin: $margin_service_text_block_desktop;
+
+                .transform_service_title {
+                    text-align: $text-align_desktop ;
+                }
+
+                .transform_service_content {
+                    text-align: $text-align_desktop;
+                }
+
+                .btn_learn {
+                    align-self: $align-self_btn_desktop;
+                }
+            }
+        }
+
+        .service_block_2 {
+            height: $height_service_block_desktop;
+            display: $display_service_block_desktop;
+            flex-direction: row;
+
+            .image_pink_glass {
+                width: $width_image_service_desktop;
+                height: $height_image_service_desktop;
+                background-size: $background-size_image_service_desktop;
+                background-position: $background-position_image_service_desktop;
+            }
+
+            .standout_block {
+                width: $width_service_text_block_desktop;
+                height: $height_service_text_block_desktop;
+                align-items: $align-items_service_text_block_desktop;
+                margin: $margin_service_text_block_desktop;
+
+                .standout_service_title {
+                    text-align: $text-align_desktop ;
+                }
+
+                .standout_service_content {
+                    text-align: $text-align_desktop;
+                }
+
+                .btn_learn {
+                    align-self: $align-self_btn_desktop;
+                }
+            }
+        }
+    }
+
+    .categories_offers {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+
+        .categories_design_block {
+            width: 339px;
+            padding-left: 191px;
+        }
+
+        .image_blue_cherry {
+            width: 50%;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .image_blue_orange {
+            width: 50%;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .categories_photo_block {
+            width: 339px;
+            padding-left: 191px;
+        }
+    }
+
+    .client_area {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 600px;
+        align-items: center;
+
+        .client_reviews_content {
+            display: flex;
+            flex-direction: row;
+            padding-top: 81px;
+        }
+    }
+
+    footer {
+
+        .footer_images {
+            width: 1440px;
+            height: 447px;
+            display: flex;
+            flex-direction: row;
+
+            .image_milk {
+                width: 25%;
+                height: 100%;
+            }
+
+            .image_orange {
+                width: 25%;
+                height: 100%;
+            }
+
+            .image_cornet {
+                width: 25%;
+                height: 100%;
+            }
+
+            .image_sugar {
+                width: 25%;
+                height: 100%;
+            }
+        }
+
+        .footer_informations_text {
+            height: 350px;
+            width: 100%;
+        }
+    }
+}

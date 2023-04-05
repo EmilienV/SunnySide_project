@@ -1,0 +1,611 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+
+header {
+  background-image: url(images/photos/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 538px;
+}
+header .sunnyside_logo {
+  margin: 32px 0 0 24px;
+}
+header .header_arrow_down {
+  display: flex;
+  justify-content: center;
+  transform: translateY(52px);
+}
+header .header_informations {
+  display: none;
+}
+header h1 {
+  font-family: "Fraunces", serif;
+  color: white;
+  padding-top: 80px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 6.25px;
+}
+
+.image_yellow_egg {
+  background-image: url(/05.Sunnyside/resources/images/photos/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 312px;
+}
+
+.transform_block {
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+  width: 327px;
+  padding: 64px 24px 64px 24px;
+}
+.transform_block .transform_service_title {
+  font-family: "Fraunces", serif;
+  color: hsl(198, 62%, 26%);
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.transform_block .transform_service_content {
+  font-family: "Fraunces", serif;
+  color: #808397;
+  letter-spacing: -0.13 px;
+  font-size: 18;
+  padding-bottom: 32px;
+}
+
+.btn_learn {
+  align-self: center;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  text-decoration-thickness: 6px;
+  text-decoration-color: rgba(254, 120, 102, 0.1450980392);
+}
+
+.image_pink_glass {
+  background-image: url(/05.Sunnyside/resources/images/photos/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 312px;
+}
+
+.standout_block {
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+  width: 327px;
+  padding: 64px 24px 64px 24px;
+}
+.standout_block .standout_service_title {
+  font-family: "Fraunces", serif;
+  color: hsl(198, 62%, 26%);
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.standout_block .standout_service_content {
+  font-family: "Fraunces", serif;
+  color: #808397;
+  letter-spacing: -0.13 px;
+  font-size: 18;
+  padding-bottom: 32px;
+}
+
+.image_blue_cherry {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(/05.Sunnyside/resources/images/photos/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.image_blue_cherry .categories_design_title {
+  padding-bottom: 27px;
+  font-size: 28px;
+  font-family: "Fraunces", serif;
+  letter-spacing: -0.2px;
+  color: hsl(198, 62%, 26%);
+}
+.image_blue_cherry .categories_design_content {
+  padding: 0 24px 59px 24px;
+  font-size: 16px;
+  font-family: "Fraunces", serif;
+  color: hsl(198, 62%, 26%);
+  letter-spacing: -0.11px;
+  line-height: 27px;
+}
+
+.image_blue_orange {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(/05.Sunnyside/resources/images/photos/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.image_blue_orange .categories_photo_title {
+  padding-bottom: 27px;
+  font-size: 28px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  color: hsl(198, 62%, 26%);
+}
+.image_blue_orange .categories_photo_content {
+  padding: 0 24px 59px 24px;
+  font-size: 16px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: hsl(198, 62%, 26%);
+  letter-spacing: -0.11px;
+  line-height: 27px;
+}
+
+.client_area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  height: 1108px;
+}
+.client_area h4 {
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #A7AAAD;
+  letter-spacing: 4px;
+  padding-top: 64px;
+}
+.client_area .client_emily {
+  height: 288px;
+  padding-top: 64px;
+}
+.client_area .client_emily img {
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50% px;
+  height: 72px;
+}
+.client_area .client_emily .client_reviews_emily {
+  padding: 32px 24px 0 24px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Barlow" serif;
+  font-weight: 600;
+  letter-spacing: 0.13px;
+  line-height: 32px;
+  color: #5B636D;
+}
+.client_area .client_emily .client_reviews_name_emily {
+  padding-top: 32px;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.13px;
+}
+.client_area .client_emily .client_reviews_job_emily {
+  padding-top: 9px;
+  font-family: "Barlow" serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: #A7AAAD;
+}
+.client_area .client_thomas {
+  height: 320px;
+  padding-top: 64px;
+}
+.client_area .client_thomas img {
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50% px;
+  height: 72px;
+}
+.client_area .client_thomas .client_reviews_thomas {
+  padding: 32px 24px 0 24px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Barlow" serif;
+  font-weight: 600;
+  letter-spacing: 0.13px;
+  line-height: 32px;
+  color: #5B636D;
+}
+.client_area .client_thomas .client_reviews_name_thomas {
+  padding-top: 32px;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.13px;
+}
+.client_area .client_thomas .client_reviews_job_thomas {
+  padding-top: 9px;
+  font-family: "Barlow" serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: #A7AAAD;
+}
+.client_area .client_jennie {
+  height: 288px;
+  padding-top: 64px;
+}
+.client_area .client_jennie img {
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50% px;
+  height: 72px;
+}
+.client_area .client_jennie .client_reviews_jennie {
+  padding: 32px 24px 0 24px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Barlow" serif;
+  font-weight: 600;
+  letter-spacing: 0.13px;
+  line-height: 32px;
+  color: #5B636D;
+}
+.client_area .client_jennie .client_reviews_name_jennie {
+  padding-top: 32px;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: -0.13px;
+}
+.client_area .client_jennie .client_reviews_job_jennie {
+  padding-top: 9px;
+  font-family: "Barlow" serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: #A7AAAD;
+}
+
+footer .footer_images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 375px;
+  height: 375px;
+  padding-top: 86px;
+}
+footer .footer_images .image_milk {
+  width: 50%;
+  height: 50%;
+  background: url(/05.Sunnyside/resources/images/photos/image-gallery-milkbottles.jpg) center/cover no-repeat;
+}
+footer .footer_images .image_orange {
+  width: 50%;
+  height: 50%;
+  background: url(/05.Sunnyside/resources/images/photos/image-gallery-orange.jpg) center/cover no-repeat;
+}
+footer .footer_images .image_cornet {
+  width: 50%;
+  height: 50%;
+  background: url(/05.Sunnyside/resources/images/photos/image-gallery-cone.jpg) center/cover no-repeat;
+}
+footer .footer_images .image_sugar {
+  width: 50%;
+  height: 50%;
+  background: url(/05.Sunnyside/resources/images/photos/image-gallery-sugarcubes.jpg) center/cover no-repeat;
+}
+footer .footer_informations_text {
+  height: 350px;
+  width: 375px;
+  background-color: #90D4C6;
+}
+footer .footer_informations_text .sunnyside_logo {
+  display: block;
+  margin: auto;
+  padding-top: 64px;
+}
+footer .footer_informations_text .informations_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #458D7E;
+  padding-top: 40px;
+  font-family: "Barlow" serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .footer_informations_text .socials_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 88px;
+}
+footer .footer_informations_text .socials_logo .socials_logo_facebook {
+  padding: 0 28px 0 28px;
+}
+footer .footer_informations_text .socials_logo .socials_logo_instagram {
+  padding: 0 28px 0 28px;
+}
+footer .footer_informations_text .socials_logo .social_logo_twitter {
+  padding: 0 28px 0 28px;
+}
+
+@media (min-width: 376px) {
+  header .nav_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .nav_header .header_informations {
+    display: inline;
+    padding: 34px 48px 0 0;
+    word-spacing: 47px;
+    color: white;
+  }
+  .service_offers {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+  }
+  .service_offers .service_block_1 {
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .service_offers .service_block_1 .image_yellow_egg {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .service_offers .service_block_1 .transform_block {
+    width: 285px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+  }
+  .service_offers .service_block_1 .transform_block .transform_service_title {
+    text-align: left;
+  }
+  .service_offers .service_block_1 .transform_block .transform_service_content {
+    text-align: left;
+  }
+  .service_offers .service_block_1 .transform_block .btn_learn {
+    align-self: flex-start;
+  }
+  .service_offers .service_block_2 {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .service_offers .service_block_2 .image_pink_glass {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .service_offers .service_block_2 .standout_block {
+    width: 285px;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+  }
+  .service_offers .service_block_2 .standout_block .standout_service_title {
+    text-align: left;
+  }
+  .service_offers .service_block_2 .standout_block .standout_service_content {
+    text-align: left;
+  }
+  .service_offers .service_block_2 .standout_block .btn_learn {
+    align-self: flex-start;
+  }
+  .categories_offers {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+  }
+  .categories_offers .categories_design_block {
+    width: 339px;
+    padding-left: 191px;
+  }
+  .categories_offers .image_blue_cherry {
+    width: 50%;
+    background-size: cover;
+    background-position: center top;
+  }
+  .categories_offers .image_blue_orange {
+    width: 50%;
+    background-size: cover;
+    background-position: center top;
+  }
+  .categories_offers .categories_photo_block {
+    width: 339px;
+    padding-left: 191px;
+  }
+  .client_area {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+  }
+  .client_area .client_reviews_content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 81px;
+  }
+  footer .footer_images {
+    width: 1440px;
+    height: 447px;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer_images .image_milk {
+    width: 25%;
+    height: 100%;
+  }
+  footer .footer_images .image_orange {
+    width: 25%;
+    height: 100%;
+  }
+  footer .footer_images .image_cornet {
+    width: 25%;
+    height: 100%;
+  }
+  footer .footer_images .image_sugar {
+    width: 25%;
+    height: 100%;
+  }
+  footer .footer_informations_text {
+    height: 350px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
