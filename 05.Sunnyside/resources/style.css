@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+
+header {
+  background-image: url(images/photos/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 538px;
+}
+header .header_arrow_down {
+  display: flex;
+  justify-content: center;
+  transform: translateY(52px);
+}
+header .header_informations {
+  display: none;
+}
+header h1 {
+  font-family: "Fraunces", serif;
+  color: white;
+  padding-top: 144px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 6.25px;
+}
+
+.image_yellow_egg {
+  background-image: url(/resources/images/photos/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 312px;
+}
+
+.transform_block {
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+  width: 327px;
+  padding: 0 24px 0 24px;
+}
+.transform_block .transform_service_title {
+  font-family: "Fraunces", serif;
+  color: hsl(198, 62%, 26%);
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.transform_block .transform_service_content {
+  font-family: "Fraunces", serif;
+  color: #808397;
+  letter-spacing: -0.13 px;
+  font-size: 18;
+  padding-bottom: 32px;
+}
+
+.btn_learn {
+  align-self: center;
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  text-decoration-thickness: 6px;
+  text-decoration-color: rgba(254, 120, 102, 0.1450980392);
+}
+
+.image_pink_glass {
+  background-image: url(/resources/images/photos/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 312px;
+}
+
+.standout_block {
+  display: flex;
+  flex-direction: column;
+  height: 309px;
+  width: 327px;
+  padding: 0 24px 0 24px;
+}
+.standout_block .standout_service_title {
+  font-family: "Fraunces", serif;
+  color: hsl(198, 62%, 26%);
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+.standout_block .standout_service_content {
+  font-family: "Fraunces", serif;
+  color: #808397;
+  letter-spacing: -0.13 px;
+  font-size: 18;
+  padding-bottom: 32px;
+}
+
+.image_blue_cherry {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(/resources/images/photos/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+.image_blue_orange {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(/resources/images/photos/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}/*# sourceMappingURL=style.css.map */
